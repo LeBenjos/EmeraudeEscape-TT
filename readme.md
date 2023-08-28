@@ -22,3 +22,9 @@ npm run dev
 # Build for production in the dist/ directory
 npm run build
 ```
+
+## Journal de Bord - Test Technique ThreeJs | 28/08/2023
+### Lundi : Introduction
+12h30 - Réunion
+13h00 - Téléchargement du projet
+20h00 - Création du Repository, prise de connaissance du test, mise en place du projet et installation des dépendances, ouverture du journal de bord.
