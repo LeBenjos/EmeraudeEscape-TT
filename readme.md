@@ -29,10 +29,12 @@ npm run build
 **Entretien** pour le poste de Creative Developer (HTML5, ThreeJS) au sein d'Emeraude Escape.  
 **Téléchargement du projet** via le lien fourni.  
 **Mise en place du projet :**
+
 - Création du Repo Git, prise de connaissance des conventions de nommage des commits.
 - Importation du projet sur le Repository et installation des dépendances.
 - Ouverture du journal de bord.
 - Prise de connaissance des objectifs et de l'architecture du test.
+  
 **Déplacement Version Desktop** du player.
 
 
