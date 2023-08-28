@@ -25,6 +25,11 @@ npm run build
 
 ## Journal de Bord - Test Technique ThreeJs | 28/08/2023
 ### Lundi : Introduction
-12h30 - Réunion
-13h00 - Téléchargement du projet
-20h00 - Création du Repository, prise de connaissance du test, mise en place du projet et installation des dépendances, ouverture du journal de bord.
+---
+**12h30 - Entretien** pour le poste de Creative Developer (HTML5, ThreeJS) au sein d'Emeraude Escape.  
+**13h00 - Téléchargement du projet** via le lien fourni.  
+**20h00 - Mise en place du projet :**
+- Création du Repo Git, prise de connaissance des conventions de nommage des commits.
+- Importation du projet sur le Repository et installation des dépendances.
+- Ouverture du journal de bord.
+- Prise de connaissance des objectifs et de l'architecture du test.
