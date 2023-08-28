@@ -48,7 +48,8 @@ export default class Experience
         this.world = new World({
             event: this.event,
             scene: this.scene,
-            resources: this.resources
+            resources: this.resources,
+            camera: this.camera
         });
 
         // Events

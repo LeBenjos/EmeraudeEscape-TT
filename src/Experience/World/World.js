@@ -13,6 +13,7 @@ export default class World
         this.event = _options.event;
         this.scene = _options.scene;
         this.resources = _options.resources;
+        this.camera = _options.camera;
 
         this.parameter = new GlobalParameter({
             event: this.event,
@@ -31,7 +32,8 @@ export default class World
             event: this.event,
             scene: this.scene,
             resources: this.resources,
-            parameter: this.parameter
+            parameter: this.parameter,
+            camera: this.camera
         })
 
         this.spawner = new ObjectSpawner({

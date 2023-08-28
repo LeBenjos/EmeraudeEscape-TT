@@ -7,6 +7,7 @@ export default class Player {
         this.scene = _options.scene;
         this.resources = _options.resources;
         this.parameter = _options.parameter;
+        this.camera = _options.camera;
 
         this.setPlayer();
 
@@ -52,11 +53,19 @@ export default class Player {
 
     updatePlayer(deltaT){
         // Move the player according to the controller
-        if(this.player.isMovingLeft){
+        const projectedPosition = new THREE.Vector3(this.player.position.x, this.player.position.y, this.player.position.z).project(this.camera.instance)
+        if(this.player.isMovingLeft && projectedPosition.x >= -1){
             this.player.position.x -= 0.005 * deltaT
         }
-        if(this.player.isMovingRight){
+        if(this.player.isMovingRight && projectedPosition.x <= 1){
             this.player.position.x += 0.005 * deltaT
+        }
+
+        // Set the bucket to 0 if it is not in the scene after resizing.
+        if(projectedPosition.x < -1.02){
+            this.player.position.x = 0
+        } else if(projectedPosition.x > 1.02){
+            this.player.position.x = 0
         }
     }
 
