@@ -33,3 +33,13 @@ npm run build
 - Importation du projet sur le Repository et installation des dépendances.
 - Ouverture du journal de bord.
 - Prise de connaissance des objectifs et de l'architecture du test.
+
+## Enseignements
+- Amélioration de mes commit grâce aux conventions de nommage
+
+## Améliorations Possibles
+
+
+## Réflexions Personnelles
+
+
