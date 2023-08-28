@@ -36,7 +36,7 @@ npm run build
 - Prise de connaissance des objectifs et de l'architecture du test.
   
 **Déplacement Version Desktop** du player.  
-**Limite les déplacements** du player à l'intérieur de la scène
+**Limite les déplacements** du player à l'intérieur de la scène.  
 
 ### Mardi :
 ---
