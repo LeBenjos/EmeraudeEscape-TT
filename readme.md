@@ -35,8 +35,8 @@ npm run build
 - Ouverture du journal de bord.
 - Prise de connaissance des objectifs et de l'architecture du test.
   
-**Déplacement Version Desktop** du player.
-
+**Déplacement Version Desktop** du player.  
+**Limite les déplacements** du player à l'intérieur de la scène
 
 ### Mardi :
 ---
