@@ -11,7 +11,8 @@ export default class Player {
         this.setPlayer();
 
         this.controller = new Controller({
-
+            mesh: this.player,
+            parameter: this.parameter
         })
     }
 
@@ -51,6 +52,12 @@ export default class Player {
 
     updatePlayer(deltaT){
         // Move the player according to the controller
+        if(this.player.isMovingLeft){
+            this.player.position.x -= 0.005 * deltaT
+        }
+        if(this.player.isMovingRight){
+            this.player.position.x += 0.005 * deltaT
+        }
     }
 
     update(deltaT){
