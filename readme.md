@@ -44,10 +44,12 @@ npm run build
 **Création de la hitbox** du player.  
 **Interaction avec les collisions** entre les entités et le player.  
 **Incrémentation du score** en fonction des entités.  
+**Uniformisation du code**.
 
 ## Enseignements
 ✨ Amélioration des messages de commit selon les conventions de nommage.  
 ✨ Utilisation de "touchstart" et "touchmove".  
+✨ Coder à partir d'un projet existant en respectant son architecture, sa syntaxe et ses règles...  
 
 ## Améliorations Possibles
 🚀 Agrandir la zone de spawn des popcorns en fonction de la taille de l'écran.  
