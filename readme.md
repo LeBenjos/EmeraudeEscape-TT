@@ -60,4 +60,6 @@ npm run build
 🚀 Ajout de sons divers lors des collisions entre les entités et le player.  
 
 ## Réflexions Personnelles
-
+J'ai adoré réaliser ce test, car j'ai pu apprendre de nombreuses choses, notamment comment mieux gérer mes commits, créer un contrôleur adapté aux mobiles et m'adapter à la syntaxe déjà présente. La formation de Bruno Simon m'a préparé pour ce test, et j'y ai d'ailleurs retrouvé des similitudes, notamment en ce qui concerne l'architecture.  
+J'ai également beaucoup apprécié d'ajouter des fonctionnalités supplémentaires, comme les contrôleurs pour desktop, la musique de fond et l'affichage du score.  
+Après avoir terminé ce test, mon enthousiasme pour rejoindre votre équipe et travailler dans le domaine du développement créatif n'a fait que grandir.  
