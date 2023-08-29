@@ -24,7 +24,7 @@ npm run build
 ```
 
 ## Journal de Bord - Test Technique ThreeJs | 28/08/2023
-### Lundi : Introduction
+### Lundi :
 ---
 **Entretien** pour le poste de Creative Developer (HTML5, ThreeJS) au sein d'Emeraude Escape.  
 **Téléchargement du projet** via le lien fourni.  
@@ -35,18 +35,20 @@ npm run build
 - Ouverture du journal de bord.
 - Prise de connaissance des objectifs et de l'architecture du test.
   
-**Déplacement Version Desktop** du player.  
+**Déplacement version Desktop** du player.  
 **Limite les déplacements** du player à l'intérieur de la scène.  
 
 ### Mardi :
 ---
+**Déplacement version Mobile** du player.
 
 ## Enseignements
-✨ Amélioration des messages de commit selon les conventions de nommage  
-✨
+✨ Amélioration des messages de commit selon les conventions de nommage.  
+✨ Utilisation de "touchstart" et "touchmove".  
 
 ## Améliorations Possibles
-
+🚀 Agrandir la zone de spawn des popcorns en fonction de la taille de l'écran.  
+🚀 Empêcher le player de quitter la scène lors des déplacements sur mobile.  
 
 ## Réflexions Personnelles
 
