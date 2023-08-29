@@ -60,13 +60,6 @@ export default class Player {
         if(this.player.isMovingRight && projectedPosition.x <= 1){
             this.player.position.x += 0.005 * deltaT
         }
-
-        // Set the bucket to 0 if it is not in the scene after resizing.
-        if(projectedPosition.x < -1.02){
-            this.player.position.x = 0
-        } else if(projectedPosition.x > 1.02){
-            this.player.position.x = 0
-        }
     }
 
     update(deltaT){

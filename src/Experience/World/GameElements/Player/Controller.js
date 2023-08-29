@@ -7,6 +7,7 @@ export default class Controller {
         console.log()
 
         this.setDesktopController()
+        this.setMobileController()
     }
 
     setDesktopController(){
@@ -28,6 +29,18 @@ export default class Controller {
     }
 
     setMobileController(){
-        console.log("Mobile Controller : TODO")
+        this.touchX = 0;
+
+        document.addEventListener('touchstart', (event) => {
+            event.preventDefault();
+            this.touchX = event.touches[0].clientX
+        }, false)
+
+        document.addEventListener('touchmove', (event) => {
+            event.preventDefault();
+            const deltaX = event.touches[0].clientX - this.touchX
+            this.player.position.x += deltaX * 0.0125
+            this.touchX = event.touches[0].clientX
+        }, false)
     }
 }
