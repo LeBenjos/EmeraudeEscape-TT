@@ -6,18 +6,17 @@ export default class Starter {
         this.resources = _options.resources;
         this.parameter = _options.parameter;
 
-        this.countdown = count
-        this.setUpCountdown()
-        
+        this.countdown = count;
+        this.setUpCountdown();
     }
 
     setUpCountdown(){
         this.texture = this.resources.items.countdown;
 
-        this.getCountdown(this.texture, 1, 4, this.countdown)
-        this.mesh = new THREE.Mesh(new THREE.PlaneGeometry(3.20, 2.16), new THREE.MeshBasicMaterial({map: this.texture, transparent: true}))
+        this.getCountdown(this.texture, 1, 4, this.countdown);
+        this.mesh = new THREE.Mesh(new THREE.PlaneGeometry(3.20, 2.16), new THREE.MeshBasicMaterial({map: this.texture, transparent: true}));
         this.mesh.position.y = -.5;
-        this.scene.add(this.mesh)
+        this.scene.add(this.mesh);
         
     }
 
@@ -46,7 +45,7 @@ export default class Starter {
     }
 
     updateCountdown(number){
-        this.getCountdown(this.texture, 1, 4, number)
+        this.getCountdown(this.texture, 1, 4, number);
     }
 
     deleteCountdown(){

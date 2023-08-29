@@ -12,20 +12,19 @@ export default class Time extends EventEmitter
 
         window.requestAnimationFrame(() => {
             this.setTick();
-        })
+        });
     }
 
     setTick(){
         const tickTack = Date.now();
-        this.deltaTime = (tickTack - this.currentTime)
-        this.currentTime = tickTack
-        this.elapsedTime = this.start - this.currentTime
+        this.deltaTime = (tickTack - this.currentTime);
+        this.currentTime = tickTack;
+        this.elapsedTime = this.start - this.currentTime;
 
-        this.trigger('update')
+        this.trigger('update');
 
         window.requestAnimationFrame(() => {
             this.setTick();
-        })
+        });
     }
-
 }

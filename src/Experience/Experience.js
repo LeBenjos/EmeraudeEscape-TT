@@ -9,7 +9,7 @@ import Debug from "./Utils/Debug.js";
 
 // Experience
 import Event from "./event.js";
-import Camera from "./Camera.js"
+import Camera from "./Camera.js";
 import Renderer from "./Renderer.js";
 
 // World
@@ -18,7 +18,7 @@ import World from "./World/World.js";
 export default class Experience 
 {
     constructor(canvas){
-        window.experience = this
+        window.experience = this;
         this.canvas = canvas;
 
         // options
@@ -30,7 +30,7 @@ export default class Experience
 
         // Setup
 
-        this.event = new Event()
+        this.event = new Event();
 
         this.camera = new Camera({
             canvas: this.canvas,
@@ -56,16 +56,16 @@ export default class Experience
         if(this.resources.toLoad !== 0){
             this.resources.on('ready', () => {
                 this.ready();
-            })
+            });
         } else {
             this.ready();
         }
         this.sizes.on('resize', () => {
             this.resize();
-        })
+        });
         this.time.on('update', () => {
             this.update();
-        })
+        });
 
     }
 

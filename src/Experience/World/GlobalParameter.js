@@ -1,4 +1,4 @@
-import Sounds from "./Sounds";
+import Sounds from "./Sounds.js";
 
 export default class GlobalParameter {
     constructor(_options){
@@ -14,24 +14,24 @@ export default class GlobalParameter {
     eventReceiver(){
         this.event.on('Start', () => {
             this.counterOn = true;
-        })
+        });
 
         this.event.on('Reset', () => {
             this.reset();
             this.counterOn = true;
-        })
+        });
 
         this.event.on('StopTimer', () => {
             this.canUpdate = false;
-        })
+        });
     }
 
     reset(){
         this.canUpdate = true;
         
-        this.setScore()
-        this.setSpawner()
-        this.setStarter()
+        this.setScore();
+        this.setSpawner();
+        this.setStarter();
     }
 
     setScore(){
@@ -54,12 +54,12 @@ export default class GlobalParameter {
     destroy(item){
         item.geometry.dispose();
           for (const key in item.material) {
-            const value = item.material[key]
+            const value = item.material[key];
   
             if (value && typeof value.dispose === 'function') {
-              value.dispose()
+              value.dispose();
             }
         }
-        this.scene.remove(item)
+        this.scene.remove(item);
     }
 }

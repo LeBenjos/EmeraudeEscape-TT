@@ -8,7 +8,6 @@ export default class Layout {
         this.parameter = _options.parameter;
 
         this.setLayout();
-
     }
 
     setLayout(){
@@ -17,7 +16,7 @@ export default class Layout {
     }
 
     setBackground(){
-        this.scene.background = this.resources.items.background
+        this.scene.background = this.resources.items.background;
         // const geometry = new THREE.PlaneGeometry(4.6, 9.5);
 
         // const material = new THREE.MeshBasicMaterial({map: this.resources.items.background, transparent: true})
@@ -29,10 +28,9 @@ export default class Layout {
     setForeground(){
         const geometry = new THREE.PlaneGeometry(5, 10);
 
-        const material = new THREE.MeshBasicMaterial({map: this.resources.items.foreground, transparent: true})
+        const material = new THREE.MeshBasicMaterial({map: this.resources.items.foreground, transparent: true});
         const mesh = new THREE.Mesh(geometry, material); 
         mesh.renderOrder = 5;
-        this.scene.add(mesh)
+        this.scene.add(mesh);
     }
-
 }

@@ -16,11 +16,10 @@ export default class Sounds {
             sound_Starter_Go : new Howl({
                 src: ['./Starter/Sounds/Starter_Countdown_Go.mp3']
             }),
-        }
+        };
     }
 
     play(sound_name){
-        this.sounds[sound_name].play()
+        this.sounds[sound_name].play();
     }
-
 }

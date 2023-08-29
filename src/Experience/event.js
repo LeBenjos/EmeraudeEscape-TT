@@ -1,4 +1,4 @@
-import EventEmitter from "./Utils/EventEmitter";
+import EventEmitter from "./Utils/EventEmitter.js";
 
 export default class Event extends EventEmitter{
     constructor(_options){

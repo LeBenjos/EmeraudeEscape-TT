@@ -17,10 +17,6 @@ export default class Sizes extends EventEmitter
             this.pixelRatio = Math.min(window.devicePixelRatio, 2);
 
             this.trigger('resize');
-        })
-
-       
+        });
     }
-
-
 }

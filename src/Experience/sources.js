@@ -68,5 +68,4 @@ export default
         path: "./Starter/Starter.webp"
     }
 
-
 ]

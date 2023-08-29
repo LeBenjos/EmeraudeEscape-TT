@@ -1,11 +1,11 @@
 import * as THREE from "three";
 
-import GlobalParameter from "./GlobalParameter";
+import GlobalParameter from "./GlobalParameter.js";
 
-import Layout from "./GameElements/Layout";
-import Player from "./GameElements/Player/Player";
-import ObjectSpawner from "./GameElements/Corns/ObjectSpawner";
-import CollisionChecker from "./CollisionChecker";
+import Layout from "./GameElements/Layout.js";
+import Player from "./GameElements/Player/Player.js";
+import ObjectSpawner from "./GameElements/Corns/ObjectSpawner.js";
+import CollisionChecker from "./CollisionChecker.js";
 
 export default class World 
 {
@@ -26,7 +26,7 @@ export default class World
             scene: this.scene,
             resources: this.resources,
             parameter: this.parameter
-        })
+        });
 
         this.player = new Player({
             event: this.event,
@@ -34,7 +34,7 @@ export default class World
             resources: this.resources,
             parameter: this.parameter,
             camera: this.camera
-        })
+        });
 
         this.spawner = new ObjectSpawner({
             event: this.event,
@@ -42,7 +42,7 @@ export default class World
             resources: this.resources,
             parameter : this.parameter,
             player: this.player
-        })
+        });
 
         this.collisionChecker = new CollisionChecker({
             event: this.event,
@@ -50,7 +50,7 @@ export default class World
             player: this.player,
             spawner: this.spawner,
             scene: this.scene
-        })
+        });
 
         this.isReady = true;
         this.event.start();
@@ -63,5 +63,4 @@ export default class World
             this.collisionChecker.update();
         }
     }
-
 }

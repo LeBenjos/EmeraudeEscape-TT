@@ -1,4 +1,4 @@
-import * as THREE from "three"
+import * as THREE from "three";
 
 export default class Renderer 
 {
@@ -25,7 +25,7 @@ export default class Renderer
     }
 
     update(){
-        this.instance.render(this.scene, this.camera.instance)
+        this.instance.render(this.scene, this.camera.instance);
     }
 
 }

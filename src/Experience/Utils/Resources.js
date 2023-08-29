@@ -21,7 +21,7 @@ export default class Resources extends EventEmitter
     }
 
     setLoaders(){
-        this.loaders = {}
+        this.loaders = {};
         // this.loaders.gltfLoader = new GLTFLoader();
         this.loaders.textureLoader = new THREE.TextureLoader();
         // this.loaders.cubeTextureLoader = new THREE.CubeTextureLoader();
@@ -33,9 +33,9 @@ export default class Resources extends EventEmitter
                 this.loaders.textureLoader.load(
                     source.path,
                     (file) => {
-                        this.sourceLoaded(source,file)
+                        this.sourceLoaded(source,file);
                     }
-                )
+                );
             } 
             //else if (source.type === 'gltfModel'){
             //     this.loaders.gltfLoader.load(
@@ -56,11 +56,11 @@ export default class Resources extends EventEmitter
     }
 
     sourceLoaded(source, file){
-        this.items[source.name] = file
+        this.items[source.name] = file;
 
-        this.loaded ++
+        this.loaded++;
         if(this.loaded == this.toLoad){
-            this.trigger('ready')
+            this.trigger('ready');
         }
     }
 }
