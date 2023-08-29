@@ -44,7 +44,9 @@ npm run build
 **Création de la hitbox** du player.  
 **Interaction avec les collisions** entre les entités et le player.  
 **Incrémentation du score** en fonction des entités.  
-**Uniformisation du code**.
+**Uniformisation du code**.  
+**Ajout du visuel du score**.  
+**Ajout d'une musique** d'arrière-plan et modification des options liées aux autres sons.  
 
 ## Enseignements
 ✨ Amélioration des messages de commit selon les conventions de nommage.  
@@ -53,7 +55,9 @@ npm run build
 
 ## Améliorations Possibles
 🚀 Agrandir la zone de spawn des popcorns en fonction de la taille de l'écran.  
-🚀 Empêcher le player de quitter la scène lors des déplacements sur mobile.  
+🚀 Empêchez le player de quitter la scène lors des déplacements sur mobile.  
+🚀 Supprimez les popcorns tombés par terre depuis trop longtemps.  
+🚀 Ajout de sons divers lors des collisions entre les entités et le player.  
 
 ## Réflexions Personnelles
 
