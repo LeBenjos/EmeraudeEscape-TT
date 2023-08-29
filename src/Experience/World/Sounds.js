@@ -11,11 +11,18 @@ export default class Sounds {
     setSounds(){
         this.sounds = {
             sound_Starter_Number : new Howl({
-                src: ['./Starter/Sounds/Starter_Countdown_Number.mp3']
+                src: ['./Starter/Sounds/Starter_Countdown_Number.mp3'],
+                volume: 0.25
             }),
             sound_Starter_Go : new Howl({
-                src: ['./Starter/Sounds/Starter_Countdown_Go.mp3']
+                src: ['./Starter/Sounds/Starter_Countdown_Go.mp3'],
+                volume: 0.25
             }),
+            sound_Background : new Howl({
+                src: ['./Starter/Sounds/Background.mp3'],
+                loop: true,
+                volume: 0.5
+            })
         };
     }
 

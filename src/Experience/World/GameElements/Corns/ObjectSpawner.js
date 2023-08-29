@@ -62,7 +62,7 @@ export default class ObjectSpawner {
 
     updateStarter(){
         this.parameter.timer -= 1;
-        
+
         if(this.parameter.timer == 250){
             this.starter = new Starter({
                 scene: this.scene,
@@ -85,6 +85,7 @@ export default class ObjectSpawner {
         } else if(this.parameter.timer == 0){ 
             this.parameter.counterOn = false;
             this.parameter.canSpawn = true;
+            this.parameter.sounds.play('sound_Background')
         }
     }
 
