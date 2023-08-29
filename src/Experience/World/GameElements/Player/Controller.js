@@ -40,6 +40,7 @@ export default class Controller {
             event.preventDefault();
             const deltaX = event.touches[0].clientX - this.touchX
             this.player.position.x += deltaX * 0.0125
+            this.player.hitbox.position.x += deltaX * 0.0125
             this.touchX = event.touches[0].clientX
         }, false)
     }

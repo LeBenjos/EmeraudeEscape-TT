@@ -25,6 +25,7 @@ export default class Player {
     setMesh(){
         this.playerGeometry = new THREE.PlaneGeometry(2.5,2);
 
+        this.scene.add(new THREE.AxesHelper())
         this.player = new THREE.Mesh(this.playerGeometry,  new THREE.MeshBasicMaterial({transparent: true, visible: false}));
         this.player.position.set(0,-3.8,0)
 
@@ -33,6 +34,11 @@ export default class Player {
         this.setColliders()
 
         this.scene.add(this.player)
+        
+        this.player.hitbox = new THREE.Mesh(new THREE.PlaneGeometry(1.7,0.1),  new THREE.MeshBasicMaterial({transparent: true, visible: false}))
+        this.player.hitbox.position.set(0, -2.95, 0)
+
+        this.scene.add(this.player.hitbox)
     }
 
     setAssets(geometry){
@@ -56,9 +62,11 @@ export default class Player {
         const projectedPosition = new THREE.Vector3(this.player.position.x, this.player.position.y, this.player.position.z).project(this.camera.instance)
         if(this.player.isMovingLeft && projectedPosition.x >= -1){
             this.player.position.x -= 0.005 * deltaT
+            this.player.hitbox.position.x -= 0.005 * deltaT
         }
         if(this.player.isMovingRight && projectedPosition.x <= 1){
             this.player.position.x += 0.005 * deltaT
+            this.player.hitbox.position.x += 0.005 * deltaT
         }
     }
 

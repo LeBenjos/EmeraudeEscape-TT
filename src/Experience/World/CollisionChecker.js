@@ -7,10 +7,29 @@ export default class CollisionChecker{
         this.parameter = _options.parameter;
         this.player = _options.player;
         this.spawner = _options.spawner;
+        this.scene = _options.scene;
+
+        this.player.cornCatch = []
     }
 
     checkCollision(){
-        
+        this.spawner.objectLists.forEach(cornType => {
+            cornType.forEach(corn => {
+                if(
+                    corn.position.x > this.player.player.hitbox.position.x - 1.7/2 &&
+                    corn.position.x < this.player.player.hitbox.position.x + 1.7/2 &&
+                    corn.position.y > this.player.player.hitbox.position.y - 0.1/2 &&
+                    corn.position.y < this.player.player.hitbox.position.y + 0.1/2 &&
+                    !this.player.cornCatch.includes(corn)
+                ){
+                    this.player.cornCatch.push(corn)
+                    corn.geometry.dispose()
+                    corn.material.dispose()
+                    this.scene.remove(corn)
+                    this.addPoint(corn)
+                }
+            });
+        })
     }
 
     addPoint(item){
@@ -26,6 +45,7 @@ export default class CollisionChecker{
             this.parameter.multiplier += 1
         }
         this.event.updateScoreIndicator();
+        console.log(this.parameter.score)
     }
 
 

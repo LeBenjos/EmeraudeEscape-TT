@@ -48,7 +48,8 @@ export default class World
             event: this.event,
             parameter : this.parameter,
             player: this.player,
-            spawner: this.spawner
+            spawner: this.spawner,
+            scene: this.scene
         })
 
         this.isReady = true;
