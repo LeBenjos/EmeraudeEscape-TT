@@ -85,7 +85,7 @@ export default class ObjectSpawner {
         } else if(this.parameter.timer == 0){ 
             this.parameter.counterOn = false;
             this.parameter.canSpawn = true;
-            this.parameter.sounds.play('sound_Background')
+            this.parameter.sounds.play('sound_Background');
         }
     }
 
