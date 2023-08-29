@@ -40,7 +40,10 @@ npm run build
 
 ### Mardi :
 ---
-**Déplacement version Mobile** du player.
+**Déplacement version Mobile** du player.  
+**Création de la hitbox** du player.  
+**Interaction avec les collisions** entre les entités et le player.  
+**Incrémentation du score** en fonction des entités.  
 
 ## Enseignements
 ✨ Amélioration des messages de commit selon les conventions de nommage.  
