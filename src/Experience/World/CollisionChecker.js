@@ -10,6 +10,7 @@ export default class CollisionChecker{
         this.scene = _options.scene;
 
         this.player.cornCatch = [];
+        this.score = document.querySelector('.score')
     }
 
     checkCollision(){
@@ -46,8 +47,7 @@ export default class CollisionChecker{
         }
         this.event.updateScoreIndicator();
         
-        // Changer pour un score affiché sur l'écran
-        console.log("TODO :",this.parameter.score);
+        this.score.innerText = this.parameter.score
     }
 
     update(){
